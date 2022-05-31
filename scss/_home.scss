@@ -1,0 +1,100 @@
+.home {
+    margin: 145px 0px;
+
+    &__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+    &__main  {
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+    }
+    &__title  {
+        max-width: 985px;
+    }
+    &__links  {
+        height: 20px;
+        transform: rotate(90deg);
+        position: absolute;
+        right: -130px;
+        top: 50%;
+    }
+    &__link  {
+        font-size: 1.2em;
+        color: $common-white;
+        vertical-align: middle;
+
+        &:visited {
+            color: $common-white;
+        }
+        &:nth-child(2) {
+            margin: 0px 53px 0px 43px;
+        }
+    }
+    &__img  {
+        margin-right: 7px;
+        vertical-align: sub;
+
+        &[src$="instagram.svg"] {
+            width: 16px;
+            height: 16px;
+        }
+        &[src$="twitter.svg"] {
+            width: 16px;
+            height: 13px;
+        }
+        &[src$="dribble.svg"] {
+            width: 15.77px;
+            height: 15.77px;
+        }
+    }
+    
+    &__hint  {
+        margin-top: 90px;
+
+    }
+    &__hint-img {
+
+    }
+}
+
+@media (max-width: 1100px) {
+    .home__title {
+        max-width: 960px;
+    }
+}
+
+@media (max-width: 850px) {
+    .home {
+        &__main {
+            flex-direction: column;
+        }
+        &__links  {
+            transform: rotate(0deg);
+            position: static;
+        }
+    }   
+}
+@media (max-width: 762px) {
+    .home__title {
+        margin-bottom: 15px;
+    }
+}
+@media (max-width: 480px) {
+    .home {
+        margin: 100px 0px;
+        
+        &__title {
+            span {
+                display: block;
+            }
+        }
+        &__link {
+            &:nth-child(2) {
+                margin: 0px 20px;
+            }
+        }
+    }
+}

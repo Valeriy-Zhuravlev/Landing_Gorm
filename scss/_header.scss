@@ -1,0 +1,150 @@
+.header {
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    &__container {
+        max-width: 1200px;
+        min-height: 85px;
+        margin: 0px auto;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    &__common {
+        font-size: 1.5em;
+        text-transform: uppercase;
+        color: rgba($color: $common-white, $alpha: 0.8);
+        display: flex;
+        align-items: center;
+    }
+    &__logo {
+        width: 27px;
+        height: 36px;
+    }
+    &__name {
+        max-width: 115px;
+        margin-left: 35px;
+        margin-right: 20px;
+    }
+    &__adress {
+        font-style: normal;
+        max-width: 130px;
+    }
+    &__menu {
+        min-width: 85px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        display: flex;
+        position: relative;
+    }
+    &__nav {
+        display: none;        
+        width: 600px;
+        height: 100%;
+        background-color: rgba($color: rgb(18,20,29), $alpha: 0.89);
+        position: absolute;
+        bottom: calc(-100% - 2px);
+        right: -250px;
+        border: 1px solid rgba(255, 255, 255, 0.15);
+        border-top: none;
+        padding: 30px 54px;
+        z-index: 1;
+
+        &-item {
+            display: inline-block;
+
+            &:not(:last-of-type) {
+                margin-right: 20px;
+            }
+        }
+        &-link {
+            color: $common-white;
+            font-size: 2em;
+            text-transform: uppercase;
+        }
+
+        &.active {
+            display: block;
+        }
+    }
+    .burger {
+        margin: auto;
+    }
+    &__badges {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+    &__basket {
+        display: flex;
+        align-items: center;
+        gap: 3px;
+    }
+    &__basket-img {
+        width: 19.17px;
+        height: 19.17px;
+    }
+    &__basket-counter {
+        width: 22px;
+        height: 22px;
+        line-height: 22px;
+        display: inline-block;
+        background-color: $common-red;
+        text-align: center;
+    }
+    &__btn {
+        width: 136px;
+        height: 43px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        &__container {
+            padding-right: 0px;
+        }
+        &__badges {
+            display: none;
+        }
+        &__nav {
+            right: -1px;
+        }
+    }
+}
+
+@media (max-width: 600px) {
+    .header {
+        &__nav {
+            width: 100vw;
+            padding: 30px 15px;
+            text-align: end;
+
+            &-link {
+                font-size: 1.7em;
+            }
+        }
+    }
+}
+
+@media (max-width: 490px) {
+    .header__adress {
+        display: none;
+    }
+}
+
+@media (max-width: 470px) {
+    .header {
+        &__nav {
+            height: 150px;
+            bottom: -152px;
+
+            &-item {
+                display: block;
+    
+                &:not(:last-of-type) {
+                    margin-right: 0px;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+    }
+}

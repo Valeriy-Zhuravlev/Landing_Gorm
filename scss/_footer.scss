@@ -1,0 +1,134 @@
+.footer {
+    margin-bottom: 90px;
+
+    &__container {
+        margin: 50px auto 0px;
+        max-width: 960px;
+        padding: 0px 15px;
+    }
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+
+        &:nth-of-type(2) {
+            margin: 30px 0px;
+        }
+    }
+    &__logo {
+    }
+    &__links  {
+        height: 20px;
+    }
+    &__link  {
+        font-size: 1.5em;
+        color: $common-white;
+        vertical-align: middle;
+
+        &:visited {
+            color: $common-white;
+        }
+        &:nth-child(2) {
+            margin: 0px 53px 0px 43px;
+        }
+    }
+    &__link-img  {
+        margin-right: 9px;
+        vertical-align: middle;
+
+        &[src$="instagram.svg"] {
+            width: 16px;
+            height: 16px;
+        }
+        &[src$="twitter.svg"] {
+            width: 16px;
+            height: 13px;
+        }
+        &[src$="dribble.svg"] {
+            width: 15.77px;
+            height: 15.77px;
+        }
+    }
+    &__intro {
+        font-size: 2em;
+        color: rgba($color: #ffffff, $alpha: 0.8);
+        max-width: 488px;
+    }
+    &__contacts {
+    }
+    &__contacts-link {
+        font-size: 1.7em;
+        color: $common-white;
+        display: block;
+        text-transform: uppercase;
+        text-align: end;
+
+        &:not(:last-of-type) {
+            margin-bottom: 13px;
+        }
+    }
+    &__nav {
+    }
+    &__nav-list {
+    }
+    &__nav-list-item {
+        display: inline-block;
+
+        &:not(:last-of-type) {
+            margin-right: 12px;
+        }
+    }
+    &__nav-link {
+        font-size: 1.5em;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $common-white;
+    }
+}
+
+.marquee {
+    $height: 169px;
+    // 
+    width: 100%;
+    height: $height;
+    background-color: $common-red;
+    text-transform: uppercase;
+    font-size: 5.8em;
+    line-height: $height;
+    overflow: hidden;
+}
+
+@media (max-width: 720px) {
+    .footer {
+        &__row {
+            flex-direction: column;
+        }
+        &__contacts-link {
+            text-align: start;
+        }
+    }
+    .marquee {
+        $height: 130px;
+        // 
+        height: $height;
+        font-size: 4.5em;
+        line-height: $height;
+    }
+}
+
+@media (max-width: 420px) {
+    .footer {
+        &__link  {
+            &:nth-child(2) {
+                margin: 0px 15px;
+            }
+        }
+    }
+    .marquee {
+        $height: 90px;
+        // 
+        height: $height;
+        font-size: 3.5em;
+        line-height: $height;
+    }
+}

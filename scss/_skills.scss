@@ -1,0 +1,104 @@
+.skills {
+    margin-bottom: 150px;
+
+    &__container {
+        max-width: 1200px;
+        padding: 0px 15px;
+        margin: 0 auto;
+        display: flex;
+        gap: 155px;
+    }
+    &__content {
+        align-self: center;
+    }
+    &__title {
+        margin-bottom: 61.55px;
+    }
+    &__statistic {
+        
+        & figure:nth-child(1) {
+            .skills__info-progress {
+                width: 80%;
+            }            
+        }
+        & figure:nth-child(2) {
+            .skills__info-progress {
+                width: 41%;
+            }
+        }
+        & figure:nth-child(3) {
+            .skills__info-progress {
+                width: 70%;
+            }
+        }
+        & figure:nth-child(4) {
+            .skills__info-progress {
+                width: 100%;
+            }
+        }
+    }
+    &__info {             
+        width: 495px;
+        margin-bottom: 20px;
+    }
+    &__info-legend {
+        font-size: 1.5em;
+        color: rgba($color: #ffffff, $alpha: 0.8);
+    }
+    &__info-name {
+        text-transform: uppercase;
+    }
+    &__info-percent {
+        float: right;
+    }
+    &__info-progress {
+        background-color: $common-red;
+        height: 2px;
+        display: block;
+        margin-top: 10.45px;
+    }
+    &__remark {
+        font-size: 1.6em;
+        color: rgba($color: #ffffff, $alpha: 0.8);
+    }
+    &__img-wrapper {
+    }
+    &__img {
+    }
+}
+
+@media (max-width: 1710px) {
+    .skills {        
+        &__container {
+            overflow: hidden;
+        }
+        &__img {
+            object-fit: cover;
+            height: 533px;
+            max-width: 550px;
+        }
+    }
+}
+
+@media (max-width: 1030px) {
+    .skills {        
+        &__container {
+            overflow: auto;
+            flex-direction: column;
+            align-items: center;
+            gap: 80px;
+        }
+    } 
+}
+
+@media (max-width: 650px) {
+    .skills {        
+        &__info {             
+            width: 100%;
+        }
+        &__img {
+            height: 426.6px;
+            max-width: 440px;
+        }
+    } 
+}

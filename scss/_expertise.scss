@@ -1,0 +1,79 @@
+.expertise {
+    margin-bottom: 150px;
+
+    &__container {
+        max-width: 990px;
+        margin: 0 auto;
+        padding: 0px 15px;
+    }
+    &__title {
+        max-width: 544px;
+        margin-bottom: 80px;
+    }
+    &__cards {
+        max-width: 960px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+    &__card {
+        width: 300px;
+        height: 337px;
+        background-color: #171924;
+        padding: 15px 15px 35px 15px;
+    }
+    &__card-header {
+        position: relative;
+        margin-bottom: 25px;
+    }
+    &__card-background {
+    }
+    &__card-img-wrapper {
+        width: 80px;
+        height: 80px;
+        border-radius: 4px;
+        background-color: $common-red;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__card-img {
+        position: relative;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    &__card-content {
+        text-align: center;
+    }
+    &__card-title {
+        font-size: 1.9em;
+        font-weight: 400;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    &__card-text {
+        font-size: 2em;
+        color: rgba($color: #ffffff, $alpha: 0.8);
+        max-width: 190px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 990px) {
+    .expertise__cards {
+        justify-content: center;
+    }
+}
+@media (max-width: 455px) {
+    .expertise__title {
+        font-size: 5.5em;
+    }
+}
+@media (max-width: 390px) {
+    .expertise__title {
+        font-size: 4.5em;
+    }
+}

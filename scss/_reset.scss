@@ -1,0 +1,19 @@
+html, body, div, span,
+h1, h2, h3, p, blockquote,
+a, address, cite, img, ul, li, form, label, legend,
+article, aside, figure, figcaption, footer, header,
+menu, nav,section, video, button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+article, aside, footer, header, nav, section {
+    display: block;
+}
+ul {
+	list-style: none;
+}
+a {
+    text-decoration: none;
+}

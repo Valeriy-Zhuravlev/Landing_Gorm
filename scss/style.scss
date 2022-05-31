@@ -1,0 +1,85 @@
+@import 'reset';
+
+$common-red: #C6100F;
+$common-white: #ffffff;
+
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 10px;
+    background-color: #000;
+    color: $common-white;
+}
+
+h1, h2 {
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+input {
+    font-size: inherit;
+}
+
+.title {
+    font-size: 8em;
+}
+.title-bg {
+    font-size: 13em;
+}
+
+.btn {
+    font-size: 1.4rem;
+    letter-spacing: 0.0714em;
+    line-height: 1.42em;
+    color: $common-white;
+    text-transform: uppercase;
+    background-color: $common-red;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+@media (max-width: 1100px) {
+    .title-bg {
+        font-size: 10em;
+    }
+}
+@media (max-width: 762px) {
+    .title {
+        font-size: 6.5em;
+    }
+    .title-bg {
+        font-size: 9em;
+    }
+}
+@media (max-width: 695px) {
+    .title-bg {
+        font-size: 8em;
+    }
+}
+@media (max-width: 620px) {
+    .title-bg {
+        font-size: 7em;
+    }
+}
+@media (max-width: 545px) {
+    .title-bg {
+        font-size: 6em;
+    }
+}
+
+@import 'header';
+@import 'burger';
+@import 'home';
+@import 'about';
+@import 'projects';
+@import 'expertise';
+@import 'testimonials';
+@import 'slider';
+@import 'skills';
+@import 'facts';
+@import 'contact';
+@import 'blog';
+@import 'footer';

@@ -1,0 +1,143 @@
+.contact {
+    margin-bottom: 150px;
+
+    &__container {
+        padding-right: 15px;
+        display: flex;
+        gap: 100px;
+    }
+    &__img-wrapper {
+        font-size: 0;
+
+        &::after {
+            content: "";
+            display: inline-block;
+            width: 218px;
+            height: 100%;
+            background-color: #12141d;
+        }
+    }
+    &__img {
+    }
+}
+
+.form {
+    width: 495px;
+
+    &__title {
+        margin-bottom: 62.22px;
+    }
+    &__input {
+        display: block;
+        width: 100%;
+        padding: 0;
+        border: none;        
+        height: 45px;
+        background-color: #12141d;
+        font-size: 2em;
+        color: rgba($color: #ffffff, $alpha: 0.8);
+        outline: 1px solid rgba(255, 255, 255, 0.2);
+        margin-bottom: 20px;
+        padding: 0px 28px;
+        box-sizing: border-box;
+        font-family: inherit;
+
+        &::placeholder {
+            font-size: 1em;
+            color: rgba($color: #ffffff, $alpha: 0.8);
+        }
+    }
+    & #form-details {
+        height: 104px;
+        padding-top: 11px;
+        resize: none;
+    }
+    &__btn {
+        font-size: 1.8em;
+        font-weight: 700;
+        color: rgba(255, 255, 255, 0.8);
+        width: 168px;
+        height: 43px;
+        letter-spacing: 0;
+    }
+}
+
+@media (max-width: 1620px) {
+    .contact {    
+        &__img-wrapper {
+            overflow: hidden;
+            height: 534px;
+            white-space: nowrap;
+        }
+        &__img {
+            object-fit: cover;
+            object-position: left;
+            height: 100%;
+            max-width: 670px;
+        }
+    }    
+}
+
+@media (max-width: 1500px) {
+    .contact {    
+        &__img {
+            object-position: unset;
+            max-width: 452px;
+        }
+    }
+}
+
+@media (max-width: 1240px) {
+    .contact {
+        &__img-wrapper {    
+            &::after {
+                width: 100px;
+            }
+        }
+        &__img {
+            max-width: 332px;
+        }
+    }
+}
+
+@media (max-width: 1050px) {
+    .form {
+        max-width: 409px;
+
+        &__title {
+            font-size: 6.8em;
+        }
+    }
+}
+
+@media (max-width: 906px) {
+    .contact {    
+        &__container {
+            flex-direction: column-reverse;
+        }
+    }
+    .form {
+        align-self: center;
+    }
+}
+
+@media (max-width: 450px) {
+    .contact {
+        &__img-wrapper {    
+            &::after {
+                width: 65px;
+            }
+        }
+        &__img {
+            max-width: 270px;
+        }
+    }
+    .form {
+        width: 100%;
+        padding-left: 15px;
+
+        &__title {
+            font-size: 4.94em;
+        }
+    }
+}

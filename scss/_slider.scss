@@ -1,0 +1,33 @@
+.slider {
+
+    &__frame {
+        max-width: 1170px;
+        overflow: hidden;
+    }
+    &__tape {
+        display: flex;
+        flex-wrap: nowrap;
+        transition: transform 300ms ease;
+    }
+    &__item {
+        width: 100%;
+        flex-basis: 100%;
+    }
+    &__pagination {
+        text-align: center;
+        margin-top: 21px;
+    }
+    &__pagination-item {
+        display: inline-block;
+        width: 11px;
+        height: 11px;
+        background-color: rgba($color: #ffffff, $alpha: 0.4);
+
+        &.active {
+            background-color: $common-white;
+        }
+        &:not(:last-child) {
+            margin-right: 10px;
+        }
+    }
+}
